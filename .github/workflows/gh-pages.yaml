@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: npm install && npm run deploy
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          npm install
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/willcrichton/tetedoro.git
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
