@@ -10,6 +10,8 @@ const PLAY_AUDIO = true;
 const frame_rate = 30;
 const break_threshold = 2;
 
+let url = s => process.env.PUBLIC_URL + s;
+
 let KittyWalk = () => {
   let [time, set_time] = useState(0);
   let [left, set_left] = useState(true);
@@ -40,7 +42,7 @@ let KittyWalk = () => {
     return () => clearInterval(intvl);
   }, [time, left]);
 
-  let src = left ? "/mimi.png" : "/naibang.png";
+  let src = url(left ? "/mimi.png" : "/naibang.png");
 
   return <div className='kitty-walk'>
     <img className='kitty' src={src} height="100" style={{
@@ -109,7 +111,7 @@ let Timer = () => {
           set_paused(false);
           set_on_break(false);
         }}>Back to work...</button></div>
-        <img src="/bothkitties.png" width="100%" />
+        <img src={url("/bothkitties.png")} width="100%" />
       </>}
   </div>;
 };
