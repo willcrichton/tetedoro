@@ -1,5 +1,5 @@
 body {
-    background: url("./geese.jpg") center top no-repeat;
+    background: url("public/geese.jpg") center top no-repeat;
     background-size: cover;
 }
 
