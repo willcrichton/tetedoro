@@ -43,6 +43,7 @@ let KittyWalk = () => {
   }, [time, left]);
 
   let src = url(left ? "/mimi.png" : "/naibang.png");
+  console.log(src);
 
   return <div className='kitty-walk'>
     <img className='kitty' src={src} height="100" style={{
