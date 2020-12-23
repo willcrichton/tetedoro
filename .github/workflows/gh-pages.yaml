@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           npm install
+          git config --global user.name "CI bot"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/willcrichton/tetedoro.git
           CI=false npm run deploy
         env:
