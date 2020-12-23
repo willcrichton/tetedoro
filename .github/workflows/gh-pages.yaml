@@ -13,6 +13,6 @@ jobs:
       - run: |
           npm install
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/willcrichton/tetedoro.git
-          npm run deploy
+          CI=false npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
