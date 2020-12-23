@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tetedoro/static/css/main.2dab26f1.chunk.css",
-    "main.js": "/tetedoro/static/js/main.8c61cccd.chunk.js",
-    "main.js.map": "/tetedoro/static/js/main.8c61cccd.chunk.js.map",
+    "main.css": "/tetedoro/static/css/main.251b7a4e.chunk.css",
+    "main.js": "/tetedoro/static/js/main.a0c51d57.chunk.js",
+    "main.js.map": "/tetedoro/static/js/main.a0c51d57.chunk.js.map",
     "runtime-main.js": "/tetedoro/static/js/runtime-main.6846e806.js",
     "runtime-main.js.map": "/tetedoro/static/js/runtime-main.6846e806.js.map",
     "static/js/2.cbe5b021.chunk.js": "/tetedoro/static/js/2.cbe5b021.chunk.js",
@@ -10,16 +10,15 @@
     "static/js/3.f32c263d.chunk.js": "/tetedoro/static/js/3.f32c263d.chunk.js",
     "static/js/3.f32c263d.chunk.js.map": "/tetedoro/static/js/3.f32c263d.chunk.js.map",
     "index.html": "/tetedoro/index.html",
-    "static/css/main.2dab26f1.chunk.css.map": "/tetedoro/static/css/main.2dab26f1.chunk.css.map",
+    "static/css/main.251b7a4e.chunk.css.map": "/tetedoro/static/css/main.251b7a4e.chunk.css.map",
     "static/js/2.cbe5b021.chunk.js.LICENSE.txt": "/tetedoro/static/js/2.cbe5b021.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/tetedoro/static/media/geese.8f5b09cb.jpg",
-    "static/media/glass.5e5abdab.wav": "/tetedoro/static/media/glass.5e5abdab.wav",
+    "static/media/glass.2fcb9874.wav": "/tetedoro/static/media/glass.2fcb9874.wav",
     "static/media/logo.6ce24c58.svg": "/tetedoro/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6846e806.js",
     "static/js/2.cbe5b021.chunk.js",
-    "static/css/main.2dab26f1.chunk.css",
-    "static/js/main.8c61cccd.chunk.js"
+    "static/css/main.251b7a4e.chunk.css",
+    "static/js/main.a0c51d57.chunk.js"
   ]
 }
