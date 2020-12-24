@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tetedoro/static/css/main.4478b2a4.chunk.css",
+    "main.css": "/tetedoro/static/css/main.316dbeb8.chunk.css",
     "main.js": "/tetedoro/static/js/main.d701dc32.chunk.js",
     "main.js.map": "/tetedoro/static/js/main.d701dc32.chunk.js.map",
     "runtime-main.js": "/tetedoro/static/js/runtime-main.6846e806.js",
@@ -10,7 +10,7 @@
     "static/js/3.f32c263d.chunk.js": "/tetedoro/static/js/3.f32c263d.chunk.js",
     "static/js/3.f32c263d.chunk.js.map": "/tetedoro/static/js/3.f32c263d.chunk.js.map",
     "index.html": "/tetedoro/index.html",
-    "static/css/main.4478b2a4.chunk.css.map": "/tetedoro/static/css/main.4478b2a4.chunk.css.map",
+    "static/css/main.316dbeb8.chunk.css.map": "/tetedoro/static/css/main.316dbeb8.chunk.css.map",
     "static/js/2.cbe5b021.chunk.js.LICENSE.txt": "/tetedoro/static/js/2.cbe5b021.chunk.js.LICENSE.txt",
     "static/media/glass.5e5abdab.wav": "/tetedoro/static/media/glass.5e5abdab.wav",
     "static/media/logo.6ce24c58.svg": "/tetedoro/static/media/logo.6ce24c58.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.6846e806.js",
     "static/js/2.cbe5b021.chunk.js",
-    "static/css/main.4478b2a4.chunk.css",
+    "static/css/main.316dbeb8.chunk.css",
     "static/js/main.d701dc32.chunk.js"
   ]
 }
