@@ -8,7 +8,7 @@ let audio2 = new Audio(audio_path);
 
 const PLAY_AUDIO = true;
 const frame_rate = 30;
-const break_threshold = 2;
+const break_threshold = 10;
 
 let url = s => process.env.PUBLIC_URL + s;
 
