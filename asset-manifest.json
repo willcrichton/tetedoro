@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tetedoro/static/css/main.316dbeb8.chunk.css",
-    "main.js": "/tetedoro/static/js/main.d701dc32.chunk.js",
-    "main.js.map": "/tetedoro/static/js/main.d701dc32.chunk.js.map",
+    "main.js": "/tetedoro/static/js/main.bd2f3395.chunk.js",
+    "main.js.map": "/tetedoro/static/js/main.bd2f3395.chunk.js.map",
     "runtime-main.js": "/tetedoro/static/js/runtime-main.6846e806.js",
     "runtime-main.js.map": "/tetedoro/static/js/runtime-main.6846e806.js.map",
     "static/js/2.cbe5b021.chunk.js": "/tetedoro/static/js/2.cbe5b021.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.6846e806.js",
     "static/js/2.cbe5b021.chunk.js",
     "static/css/main.316dbeb8.chunk.css",
-    "static/js/main.d701dc32.chunk.js"
+    "static/js/main.bd2f3395.chunk.js"
   ]
 }
