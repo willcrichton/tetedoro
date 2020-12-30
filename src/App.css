@@ -26,6 +26,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+.current-time input {
+    font-size: 48px;
+    width: 55px;
+    text-align: right;
+    font-weight: bold;
+}
+
 .break-time {
     text-align: center;
     font-size: 36px;

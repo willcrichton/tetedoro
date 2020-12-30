@@ -8,7 +8,6 @@ let audio2 = new Audio(audio_path);
 
 const PLAY_AUDIO = true;
 const frame_rate = 30;
-const break_threshold = 10;
 
 let url = s => process.env.PUBLIC_URL + s;
 
@@ -57,6 +56,7 @@ let Timer = () => {
   let [time, set_time] = useState(0);
   let [paused, set_paused] = useState(true);
   let [on_break, set_on_break] = useState(false);
+  let [break_threshold, set_break_threshold] = useState(25);
 
   useEffect(() => {
     let intvl = setInterval(() => {
@@ -65,7 +65,7 @@ let Timer = () => {
         let new_time = time + t - last;
         set_time(new_time);
 
-        if (new_time / 1000 > break_threshold && !on_break) {
+        if (new_time / 1000 > break_threshold*60 && !on_break) {
           set_on_break(true);
           set_paused(true);
 
@@ -81,9 +81,9 @@ let Timer = () => {
     return () => clearInterval(intvl);
   }, [paused, on_break]);
 
-  let diff = time / 1000;
-  let sec = Math.round(diff % 60);
-  let min = Math.round(diff / 60 % 60);
+  let diff = break_threshold * 60 - time / 1000;
+  let sec = Math.floor(diff % 60);
+  let min = Math.floor(diff / 60 % 60);
 
   let to_str = n => n.toString().padStart(2, "0");
 
@@ -91,7 +91,19 @@ let Timer = () => {
     {!on_break
       ? <>
         <div className='current-time'>
-          {`${to_str(min)}:${to_str(sec)}`}
+          {paused && time == 0
+            ? <input type="text"
+                     defaultValue={to_str(break_threshold)}
+                     onChange={(e) => {
+                       let n = parseInt(e.target.value);
+                       if (!isNaN(n)) {
+                         console.log(n);
+                         set_break_threshold(n);
+                       }
+                     }} />
+            : to_str(min)}
+
+          {`:${to_str(sec)}`}
         </div>
         <div className='buttons'>
           <button onClick={() => set_paused(!paused)}>{paused ? "Start" : "Pause"}</button>
