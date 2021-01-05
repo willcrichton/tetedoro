@@ -70,6 +70,10 @@ let Timer = () => {
           set_paused(true);
 
           if (PLAY_AUDIO) {
+            let notification = new Notification('Break time!');
+            notification.onclick = () => {
+              window.focus();
+            };
             audio1.play();
             setTimeout(() => {audio2.play()}, 200);
           }
@@ -120,7 +124,7 @@ let Timer = () => {
         <div className='back-to-work'><button onClick={() => {
           set_time(0);
           set_last(new Date().getTime());
-          set_paused(false);
+          set_paused(true);
           set_on_break(false);
         }}>Back to work...</button></div>
         <img src={url("/bothkitties.png")} width="100%" />
@@ -130,6 +134,10 @@ let Timer = () => {
 
 
 function App() {
+  useEffect(() => {
+    Notification.requestPermission();
+  });
+
   return (
     <div className="container">
       <h1>Tetedoro</h1>
